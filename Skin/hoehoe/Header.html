@@ -1,0 +1,145 @@
+<html>
+<head>
+<title><THREADNAME/></title>
+<style type="text/css">
+a:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+.pic_def {
+	filter: Alpha(opacity=50);
+	height: 65px;
+}
+.pic_mid {
+	filter: Alpha(opacity=70);
+	height: 70%;
+}
+.pic_normal {
+	filter: Alpha(opacity=100);
+}
+.link_button {
+	color: #ffffff;
+	font-size: 75%;
+	background: #a0a0a0;
+	border: 0 solid #909090;
+	margin-left: 4;
+	cursor: hand ;
+}
+</style>
+
+<script type="text/JavaScript">
+<!--
+document.onmouseover = checkAnchor;
+
+var img_ext = new RegExp("");
+img_ext.compile(/\.png$|\.jp(g|e|eg)$|\.gif$|\.bmp$/i);
+
+function checkAnchor()
+{
+	var e = window.event.srcElement;
+	if (e.tagName == 'A')
+	{
+		if(e.id.search(/replaced/) == -1)
+		{
+			if (e.href.search(img_ext) != -1)
+			{
+      				insButton(e);
+			}
+		}
+	}
+}
+
+var imgNo = 0;
+function insButton(a)
+{
+    	var html = '<input type=button class="link_button" value="Load" onClick=insImage("' + a.href + '") id="buttonID' + imgNo.toString() +'">';
+
+	a.insertAdjacentHTML('AfterEnd', html);
+	a.id = 'replaced';
+
+	imgNo++;
+}
+
+var visible_imgNo = 0;
+function insImage(url)
+{
+	var e = window.event.srcElement;
+	var eid = e.id.replace(/^buttonID/,'');
+
+	var ie = document.getElementById('imgID' + eid);
+	if (ie)
+	{
+		if (ie.style.display == 'none')
+		{
+			ie.style.display = 'inline';
+			e.value = 'Close';
+		}
+		else {
+			ie.style.display = 'none';
+			e.value = 'Open';
+		}
+
+		if (ie.sourceIndex > 0)
+		{
+			var br = document.all[ie.sourceIndex - 1];
+			if (br && br.tagName == 'BR')
+			{
+				if (br.style.display == 'none')
+					br.style.display = 'inline';
+				else
+					br.style.display = 'none';
+			}
+		}
+	}
+	else {
+		var imgclass = 'pic_def';
+		var html = '<br><img src="' + url + '" id="imgID' + eid + '" class="' + imgclass + '" onError="imgNotFoound(\'imgID' + eid + '\',\'' + e.id + '\');" onMouseDown="imgClick(this);">';
+ 
+		e.value = 'Close';
+		e.insertAdjacentHTML('afterEnd', html);
+	}
+}
+
+function imgClick(image)
+{
+	var e = window.event;
+
+	if (e.button == 1)
+	{
+		if (image.className == 'pic_def')
+		{
+			image.className = 'pic_mid';
+		}
+		else if (image.className == 'pic_mid')
+		{
+			image.className = 'pic_normal';
+		}
+		else if (image.className == 'pic_normal')
+		{
+			image.className = 'pic_def';
+		}
+	}
+}
+
+function imgNotFoound(imageID, buttonID)
+{
+	var button = document.getElementById(buttonID);
+	button.value = 'No Image';
+	button.onclick = null;
+
+	var image = document.getElementById(imageID);
+	image.style.display = 'none';
+
+	if (image.sourceIndex > 0)
+	{
+		var br = document.all[image.sourceIndex - 1];
+		if (br && br.tagName == 'BR')
+ 			br.style.display = 'none';
+	}
+}
+-->
+</script>
+</head>
+<body>
+<font face="‚l‚r ‚oƒSƒVƒbƒN">
+<dl>

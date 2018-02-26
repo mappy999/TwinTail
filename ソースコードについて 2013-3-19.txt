@@ -1,0 +1,82 @@
+
+《はじめに》
+	２ちゃんねる用ブラウザ twintail のソースコードの説明です。
+	とても下手で読みづらいコードです。
+
+《ライセンス》
+	BSDライセンスです。
+	ソースコードを使用する場合などの連絡などは必要ありません。
+
+	ちなみに、使用しているアイコンは初期のころユーザーの人が作ってくれたものです
+	（作ってくれた方、ありがとうございます！）
+	ライセンスはわかりません。。
+
+《必要な環境》
+	Microsoft Visual C# 2010 Express Edition をインストールしておく必要があります。
+
+《開発環境》
+	Microsoft Visual Studio 2010 Version 10.0.30319.1 RTMRel
+	Microsoft .NET Framework Version 4.0.30319 RTMRel
+
+	  OS   Windows7
+	 CPU  Athlon 64 X2 3600
+	メモリ 4GB
+	
+	配布サイト
+	http://www.geocities.jp/nullpo0/
+
+
+《外部ライブラリ》
+
+<RebarDotNet>
+	C#でRebarコントロールを使用するためのライブラリです。
+	オリジナルはこちら。
+	http://www.codeproject.com/cs/menu/rebarcontrol.asp
+
+《ビルド手順》
+
+１．ソリューションを開く
+
+	Twintail Project\ch2Solution\ch2Solution.sln を開いてください。
+
+２．参照設定
+
+	Twintail Library のプロジェクトで一緒に添付してある Microsoft.mshtml.dll を 
+	Twintail プロジェクトで参照設定してください。
+
+３．ビルド
+	最後にビルドしてエラーが出なければ成功です。
+
+４．実行
+	スレッドを表示するためにはスキンが必要です。
+	ソースファイル内に含まれている Skin フォルダを
+	twintail.exeと同じフォルダにコピーしてください。
+
+	あとは起動するだけです。
+
+《各フォルダの説明》
+
+	CSharpSamples
+		昔作ったあまり役に立たないクラス群です。
+		twintailではiniファイルを扱うクラスを使用しています。
+
+	RebarDotNet
+		Windows標準のRebarコントロールをC#でラッパーしたライブラリです。
+		.NET1.0当時はまだToolStripクラスが無かったのでこのクラスを使用しました。
+
+	Twintail Project
+		ch2Solution
+
+			twin
+				通信やデータ処理などを行うクラス群です。
+
+			twinie
+				IEコンポを使用したプログラム本体です。
+				最初はIEコンポ非使用のも作ろうと思ってましたが、諦めました。
+		ImageViewer
+			本体と連携する画像ビューアです。
+
+《お礼》
+	今まで協力してくれた皆様、今でもtwintailを使用してくださっているユーザーの皆様、
+	本当にありがとうございます。
+	

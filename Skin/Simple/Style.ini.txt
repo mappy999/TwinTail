@@ -1,0 +1,12 @@
+
+[Option]
+UrlPopup=Disable
+ImagePopup=Disable
+Thumb=True
+
+[Popup]
+FontFace=‚l‚r ‚oƒSƒVƒbƒN
+FontSize=9
+BackColor=Info
+ForeColor=#000000
+

@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DE99D5E-FC78-41F6-B489-3E299713A5DB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>twintail</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Twin</RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>..\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Itanium'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Itanium'">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BookmarkMenuBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColoringWord\ColorWordEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColoringWord\ColorWordEditDialog.Designer.cs">
+      <DependentUpon>ColorWordEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColoringWord\ColorWordInfo.cs" />
+    <Compile Include="ColoringWord\ColorWordRegistDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColoringWord\ColorWordRegistDialog.Designer.cs">
+      <DependentUpon>ColorWordRegistDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Counter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisplayNameAttribute.cs" />
+    <Compile Include="Forms\BackupUtil.cs" />
+    <Compile Include="Forms\Dialogs\BeLoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\BeLoginDialog.Designer.cs">
+      <DependentUpon>BeLoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CacheRemovingTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CacheRemovingTool.Designer.cs">
+      <DependentUpon>CacheRemovingTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ControlInterfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PreFolderBrowserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PreFolderBrowserDialog.Designer.cs">
+      <DependentUpon>PreFolderBrowserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SubjectSearchOptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SubjectSearchOptionDialog.Designer.cs">
+      <DependentUpon>SubjectSearchOptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\BeLoginDialog2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\BeLoginDialog2.Designer.cs">
+      <DependentUpon>BeLoginDialog2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyWebBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AddBookmarkDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\AuthenticateSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\BoardSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\BoardUpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\CacheClearDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DatIndexerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\DatIndexerDialog.Designer.cs">
+      <DependentUpon>DatIndexerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\BoardTableEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\FileNameEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\GroupAddDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\GroupAddDialog.Designer.cs">
+      <DependentUpon>GroupAddDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\GroupEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\GroupEditorDialog.Designer.cs">
+      <DependentUpon>GroupEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\ItaBotanEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\NGWordEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\ScrapEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\SimpleAAEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Editor\ToolsEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\OpenDatDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\PostDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ResExtractDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SambaErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Search\BoardSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Search\CacheSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Search\ThreadListSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\Search\ThreadSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SelectSkinDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\SirusiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\TabColorChangeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\TabColorChangeDialog.Designer.cs">
+      <DependentUpon>TabColorChangeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ThreadUpdateChecker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\ToolRegistDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\WaitingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\WaitingDialog.Designer.cs">
+      <DependentUpon>WaitingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DisplayLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\DockWriteBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Download.Designer.cs">
+      <DependentUpon>Download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItaBotanPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\ListViewItemComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\MouseGestures\MouseGestureActionItem.cs" />
+    <Compile Include="Forms\MouseGestures\MouseGestureSettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MouseGestures\MouseGestureSettingDialog.Designer.cs">
+      <DependentUpon>MouseGestureSettingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Operation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\PopupState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\PostedEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\CacheDatSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\CacheSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\CacheSearchResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\CacheSubjectSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\IEComExtractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\IEComSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\ThreadListSearcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Searches\ThreadSearchEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\SimplWebBrws\Options.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\SimplWebBrws\SimpleWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SkinStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TabColorTable.cs" />
+    <Compile Include="Forms\TabControlNativeWindow.cs" />
+    <Compile Include="Forms\Thumbnail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Twin2IeBrowser.Controller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Twin2IeBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Twin2IeBrowser.Designer.cs">
+      <DependentUpon>Twin2IeBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Twin2IeBrowser.MenuHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Twin2IeHtmlSkin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\TwinUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\ActiveThumbnail.cs" />
+    <Compile Include="Forms\Viewer\AutoReloadChangedEventArgs.cs" />
+    <Compile Include="Forms\Viewer\BoardPictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\BoardTableEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\BoardTableView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\BookmarkView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\IEComMethodInvoker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\IEComPreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\IEComThreadBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\IExternalMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\LocalRuleViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MouseGestures\MouseGesture.cs" />
+    <Compile Include="Forms\MouseGestures\MouseGestureEventArgs.cs" />
+    <Compile Include="Forms\Viewer\ThreadListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Viewer\TwinListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\WriteResQueueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WriteResQueueDialog.Designer.cs">
+      <DependentUpon>WriteResQueueDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSerializer2.cs" />
+    <Compile Include="MizutamaSan\NWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NGWordsManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\HtmlPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\IDocHostUIHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\IPopupBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\MultiplePopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\SimplePopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Popup\PopupTest.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SirusiRefEventArgs.cs" />
+    <Compile Include="Test\Html\Attribute\HtmlAttribute.cs" />
+    <Compile Include="Test\Html\Attribute\HtmlAttributeCollection.cs" />
+    <Compile Include="Test\Html\HtmlDocument.cs" />
+    <Compile Include="Test\Html\HtmlException.cs" />
+    <Compile Include="Test\Html\HtmlFormatter.cs" />
+    <Compile Include="Test\Html\HtmlParser.cs" />
+    <Compile Include="Test\Html\HtmlTextUtility.cs" />
+    <Compile Include="Test\Html\Node\HtmlElement.cs" />
+    <Compile Include="Test\Html\Node\HtmlNode.cs" />
+    <Compile Include="Test\Html\Node\HtmlNodeCollection.cs" />
+    <Compile Include="Test\Html\Node\HtmlText.cs" />
+    <Compile Include="Test\Popup\HtmlControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test\Popup\PopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\Popup\PopupForm.Designer.cs">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Popup\RenderAnchor.cs" />
+    <Compile Include="Test\Popup\RenderBold.cs" />
+    <Compile Include="Test\Popup\RenderBr.cs" />
+    <Compile Include="Test\Popup\RenderDL.cs" />
+    <Compile Include="Test\Popup\RenderElement.cs" />
+    <Compile Include="Test\Popup\RenderFont.cs" />
+    <Compile Include="Test\Popup\RenderHead.cs" />
+    <Compile Include="Test\Popup\RenderObject.cs" />
+    <Compile Include="Test\Popup\RenderRoot.cs" />
+    <Compile Include="Test\Popup\RenderStyle.cs" />
+    <Compile Include="Test\Popup\RenderText.cs" />
+    <Compile Include="ThreadGroup.cs" />
+    <Compile Include="Tools\BeLoginManager.cs" />
+    <Compile Include="Tools\ExternalTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ImageCacheClient.cs" />
+    <Compile Include="Tools\ImageThumbnail.cs" />
+    <Compile Include="Tools\InternalTool.cs" />
+    <Compile Include="Tools\RelatedKeyword.cs" />
+    <Compile Include="Tools\SelfNotify.cs" />
+    <Compile Include="Tools\SettingTxtManager.cs" />
+    <Compile Include="Tools\ToolItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ToolItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Twinie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwinUserProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserEnvSettings.cs" />
+    <Compile Include="Utilities\BookmarkUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ClipboardUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\CommonUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ItaBotan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\MouseHook.cs" />
+    <Compile Include="Utilities\SearchBotan.cs" />
+    <Compile Include="Utilities\StringUtility.cs" />
+    <Compile Include="Utilities\TabUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\TreeViewUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebProxyToCredential.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\BeLoginManager2.cs" />
+    <EmbeddedResource Include="ColoringWord\ColorWordEditDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorWordEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColoringWord\ColorWordRegistDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorWordRegistDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\BeLoginDialog.resx">
+      <DependentUpon>BeLoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CacheRemovingTool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CacheRemovingTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AddBookmarkDialog.resx">
+      <DependentUpon>AddBookmarkDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\AuthenticateSettingDialog.resx">
+      <DependentUpon>AuthenticateSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\BoardSelectDialog.resx">
+      <DependentUpon>BoardSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\BoardUpdateDialog.resx">
+      <DependentUpon>BoardUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\CacheClearDialog.resx">
+      <DependentUpon>CacheClearDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\DatIndexerDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DatIndexerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\BoardTableEditorDialog.resx">
+      <DependentUpon>BoardTableEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\FileNameEditorDialog.resx">
+      <DependentUpon>FileNameEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\GroupAddDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupAddDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\GroupEditorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\ItaBotanEditorDialog.resx">
+      <DependentUpon>ItaBotanEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\NGWordEditorDialog.resx">
+      <DependentUpon>NGWordEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\ScrapEditorDialog.resx">
+      <DependentUpon>ScrapEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\SimpleAAEditorDialog.resx">
+      <DependentUpon>SimpleAAEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Editor\ToolsEditorDialog.resx">
+      <DependentUpon>ToolsEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\OpenDatDialog.resx">
+      <DependentUpon>OpenDatDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\OptionDialog.resx">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\PostDialog.resx">
+      <DependentUpon>PostDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\PreFolderBrowserDialog.resx">
+      <DependentUpon>PreFolderBrowserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ResExtractDialog.resx">
+      <DependentUpon>ResExtractDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SambaErrorDialog.resx">
+      <DependentUpon>SambaErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Search\BoardSearchDialog.resx">
+      <DependentUpon>BoardSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Search\CacheSearchDialog.resx">
+      <DependentUpon>CacheSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Search\ThreadListSearchDialog.resx">
+      <DependentUpon>ThreadListSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\Search\ThreadSearchDialog.resx">
+      <DependentUpon>ThreadSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SelectSkinDialog.resx">
+      <DependentUpon>SelectSkinDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SirusiDialog.resx">
+      <DependentUpon>SirusiDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\SubjectSearchOptionDialog.resx">
+      <DependentUpon>SubjectSearchOptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\TabColorChangeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabColorChangeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ThreadUpdateChecker.resx">
+      <DependentUpon>ThreadUpdateChecker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\ToolRegistDialog.resx">
+      <DependentUpon>ToolRegistDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\WaitingDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WaitingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\BeLoginDialog2.resx">
+      <DependentUpon>BeLoginDialog2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DockWriteBar.resx">
+      <DependentUpon>DockWriteBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Download.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MouseGestures\MouseGestureSettingDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MouseGestureSettingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SimplWebBrws\SimpleWebBrowser.resx">
+      <DependentUpon>SimpleWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashWindow.resx">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Twin2IeBrowser.resx">
+      <DependentUpon>Twin2IeBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Viewer\BoardPictureViewer.resx">
+      <DependentUpon>BoardPictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Viewer\BoardTableView.resx">
+      <DependentUpon>BoardTableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Viewer\BookmarkView.resx">
+      <DependentUpon>BookmarkView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Viewer\LocalRuleViewer.resx">
+      <DependentUpon>LocalRuleViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WriteResQueueDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WriteResQueueDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\Popup\PopupForm.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CSharpSamples\CSharpSamples.csproj">
+      <Project>{A941B03E-81A7-4B6B-934E-A015057C39DA}</Project>
+      <Name>CSharpSamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RebarDotNet\RebarDotNet\RebarDotNet.csproj">
+      <Project>{2323ABD0-509B-4180-BC31-7BD57053CE86}</Project>
+      <Name>RebarDotNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ImageViewer\ImageViewerDll.csproj">
+      <Project>{35EAF87A-5938-4E2C-8C8E-A3342A661B71}</Project>
+      <Name>ImageViewerDll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\twin\Twintail Library.csproj">
+      <Project>{1F43686D-EF23-4DDB-AF4B-0F391B5A4AAA}</Project>
+      <Name>Twintail Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <None Include="app.config" />
+    <None Include="Resources\denki.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
